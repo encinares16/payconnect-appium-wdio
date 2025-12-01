@@ -1,0 +1,85 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"The system should successfully launch the Payconnect application and process card transactions using **Dip** with the account type set to **Debit (Savings Account)**
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale feature is enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. Account Type: Debit (Savings).
+5. Payment Entry Mode: Dip (I).","27711","AP_004: Accept Payment - Visa (Dip, Debit Savings) should be processed successfully.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Accept Payment","Mon Dec 01 06:10:23 UTC 2025","passed","Mon Dec 01 06:10:51 UTC 2025","","","",""
+"The system should successfully launch the Payconnect application and process card transactions using **Tap** with the account type set to **Debit (Checking Account)**
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale feature is enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. Account Type: Debit (Checking).
+5. Payment Entry Mode: Tap (T).","75311","AP_005: Accept Payment - Visa (Tap, Debit Checking) should be processed successfully.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Accept Payment","Mon Dec 01 06:10:51 UTC 2025","passed","Mon Dec 01 06:12:06 UTC 2025","","","",""
+"The system should allow the user to void an existing sale transaction when a valid transaction trace number is provided. If the trace number does not exist or cannot be found in the transaction history.
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale and Void features are enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. There must be at least one successful sale transaction.","49328","VT_001: should void an existing sale transaction.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Void","Mon Dec 01 06:06:05 UTC 2025","passed","Mon Dec 01 06:06:55 UTC 2025","","","",""
+"The system should successfully launch the Payconnect application and process card transactions using **Dip** with the account type set to **Debit (Checking Account)**
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale feature is enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. Account Type: Debit (Checking).
+5. Payment Entry Mode: Dip (I).","28598","AP_006: Accept Payment - Visa (Dip, Debit Checking) should be processed successfully.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Accept Payment","Mon Dec 01 06:12:06 UTC 2025","passed","Mon Dec 01 06:12:34 UTC 2025","","","",""
+"The system should allow the user to proceed to the **Payconnect Main Screen** and close the app using the **Terminal Password**.
+
+###Preconditions
+1. The terminal is connected to the internet.
+2. The terminal is registered in the Payconnect Portal.
+3. The terminal Master Key is successfully injected.","14302","AU_003: should launch and close the Payconnect app using the terminal password.","Sprint 29: Payconnect 2.0 Terminal - Authenticate","Mon Dec 01 05:48:40 UTC 2025","passed","Mon Dec 01 05:48:54 UTC 2025","","","",""
+"The system should display an error message with **Error Code: 10001** when launching the app with no internet connection.
+
+###Preconditions
+1. Wi-Fi or internet connection is disabled on the terminal.","48255","AU_004: should prompt error message when launching app with no internet connection.","Sprint 29: Payconnect 2.0 Terminal - Authenticate","Mon Dec 01 05:49:11 UTC 2025","passed","Mon Dec 01 05:49:59 UTC 2025","","","",""
+"The system should display an error message when it is launched without the **Master Key** injected.
+
+###Preconditions
+1. The terminal is connected to the internet.
+2. The terminal is registered in the Payconnect Portal.
+3. The KeyInjector app is installed.
+4. The terminal Master Key has not been injected.","10195","AU_001: should display an error when the Terminal Master Key is not injected.","Sprint 29: Payconnect 2.0 Terminal - Authenticate","Mon Dec 01 05:47:58 UTC 2025","passed","Mon Dec 01 05:48:09 UTC 2025","","","",""
+"The system should allow the user to void an existing sale transaction when a valid transaction trace number is provided. If the trace number does not exist or cannot be found in the transaction history.
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale and Void features are enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. There must be at least one successful sale transaction.","12601","VT_002: should not void if the transaction trace number does not exist.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Void","Mon Dec 01 06:06:55 UTC 2025","passed","Mon Dec 01 06:07:07 UTC 2025","","","",""
+"The system should successfully launch the Payconnect application and process card transactions using **Dip** with the account type set to **Credit**.
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale feature is enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. Account Type: Credit (CA).
+5. Payment Entry Mode: Dip (I).","32608","AP_002: Accept Payment - Visa (Dip, Credit) should be processed successfully.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Accept Payment","Mon Dec 01 06:08:35 UTC 2025","passed","Mon Dec 01 06:09:07 UTC 2025","","","",""
+"The system should successfully launch the Payconnect application and process card transactions using **Tap** with the account type set to **Credit**.
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale feature is enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. Account Type: Credit (CA).
+5. Payment Entry Mode: Tap (T).","33242","AP_001: Accept Payment - Visa (Tap, Credit) should be processed successfully.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Accept Payment","Mon Dec 01 06:08:02 UTC 2025","passed","Mon Dec 01 06:08:35 UTC 2025","","","",""
+"The system should allow the user to install the **KeyInjector** application and inject the **Master Key** successfully.
+
+###Preconditions
+1. The terminal is connected to the internet.
+2. The terminal is registered in the Payconnect Portal.","14760","AU_002: should allow the user to install and inject terminal master key.","Sprint 29: Payconnect 2.0 Terminal - Authenticate","Mon Dec 01 05:48:09 UTC 2025","passed","Mon Dec 01 05:48:23 UTC 2025","","","",""
+"The system should successfully launch the Payconnect application and process card transactions using **Tap** with the account type set to **Debit (Savings Account)**
+
+### Preconditions
+1. Visa is supported by the terminal.
+2. Sale feature is enabled in the terminal.
+3. The transaction amount must be valid and not less than ₱1.00.
+4. Account Type: Debit (Savings).
+5. Payment Entry Mode: Tap (T).","75488","AP_003: Accept Payment - Visa (Tap, Debit Savings) should be processed successfully.","Sprint 29: Payconnect 2.0 Terminal (Visa) - Accept Payment","Mon Dec 01 06:09:07 UTC 2025","passed","Mon Dec 01 06:10:23 UTC 2025","","","",""
