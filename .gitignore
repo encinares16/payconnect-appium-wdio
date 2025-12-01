@@ -5,6 +5,9 @@ eng.traineddata
 /data/testData.js
 /storage
 /allure-report
+/allure-results-auth
+/allure-results-sale
+/allure-results-void
 test/screenshots
 /test/specs/draft/*.js
 /test/specs/draft/*.txt
